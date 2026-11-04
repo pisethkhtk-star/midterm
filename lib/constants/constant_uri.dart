@@ -1,5 +1,7 @@
-class ConstantUri{
-  static const baseUri = "http://10.10.0.180:30033";
-  static const login = "$baseUri/api/oauth/token";
-  static const refreshToken = "$baseUri/api/oauth/refresh";
+import 'package:demo_access_refresh_token_app/core/constants/api_endpoints.dart';
+
+class ConstantUri {
+  static String get baseUri => ApiEndpoints.baseUrl;
+  static String get login => ApiEndpoints.login;
+  static String get refreshToken => ApiEndpoints.refreshToken;
 }
